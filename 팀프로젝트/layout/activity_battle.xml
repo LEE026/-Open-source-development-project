@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/a"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:background="#66BB6A"
+    android:orientation="vertical"
+    tools:context="com.wagdev.heromancer.battle">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/window"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <ImageButton
+            android:id="@+id/mob1"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="48dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_launcher_round"
+            app:layout_constraintEnd_toStartOf="@+id/mob3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/mob2"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="48dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_launcher_round"
+            app:layout_constraintEnd_toStartOf="@+id/mob4"
+            app:layout_constraintTop_toBottomOf="@+id/mob2hp" />
+
+        <ImageButton
+            android:id="@+id/mob3"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="72dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_launcher_round"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mob3hp" />
+
+        <ImageButton
+            android:id="@+id/mob4"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="72dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_launcher_round"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mob4hp" />
+
+        <ImageButton
+            android:id="@+id/mob5"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="72dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_launcher_round"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mob5hp" />
+
+        <ImageButton
+            android:id="@+id/player2"
+            android:layout_width="45dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/p2"
+            app:srcCompat="@drawable/player" />
+
+        <ImageButton
+            android:id="@+id/player1"
+            android:layout_width="45dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/playermp1"
+            app:srcCompat="@drawable/player" />
+
+        <ImageButton
+            android:id="@+id/player3"
+            android:layout_width="45dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/p3"
+            app:srcCompat="@drawable/player" />
+
+        <ProgressBar
+            android:id="@+id/mob1hp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="50dp"
+            android:layout_height="5dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="4dp"
+            android:max="100"
+            android:progress="100"
+            android:progressBackgroundTint="#375F41"
+            android:progressTint="#cc0000"
+            app:layout_constraintBottom_toTopOf="@+id/mob1"
+            app:layout_constraintEnd_toStartOf="@+id/mob3" />
+
+        <ProgressBar
+            android:id="@+id/mob2hp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="50dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="48dp"
+            android:max="100"
+            android:progress="100"
+            android:progressBackgroundTint="#375F41"
+            android:progressTint="#cc0000"
+            app:layout_constraintEnd_toStartOf="@+id/mob4"
+            app:layout_constraintTop_toBottomOf="@+id/mob1" />
+
+        <ProgressBar
+            android:id="@+id/mob3hp"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="50dp"
+            android:layout_height="5dp"
+            android:layout_marginEnd="72dp"
+            android:max="100"
+            android:progress="100"
+            android:progressBackgroundTint="#375F41"
+            android:progressTint="#cc0000"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/mob5" />
+
+        <ProgressBar
+            android:id="@+id/mob4hp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="50dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="72dp"
+            android:max="100"
+            android:progress="100"
+            android:progressBackgroundTint="#375F41"
+            android:progressTint="#cc0000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mob3" />
+
+        <ProgressBar
+            android:id="@+id/mob5hp"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="50dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="72dp"
+            android:max="100"
+            android:progress="100"
+            android:progressBackgroundTint="#375F41"
+            android:progressTint="#cc0000"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/playerhp1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="45dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="5dp"
+            android:max="100"
+            android:progress="100"
+            android:progressBackgroundTint="#375F41"
+            android:progressTint="#cc0000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/p1" />
+
+        <ProgressBar
+            android:id="@+id/playerhp2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="45dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="5dp"
+            android:max="100"
+            android:progress="100"
+            android:progressBackgroundTint="#375F41"
+            android:progressTint="#cc0000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/p2" />
+
+        <ProgressBar
+            android:id="@+id/playerhp3"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="45dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="5dp"
+            android:max="100"
+            android:progress="100"
+            android:progressBackgroundTint="#375F41"
+            android:progressTint="#cc0000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/p3" />
+
+        <ProgressBar
+            android:id="@+id/playermp1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="45dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="2dp"
+            android:max="100"
+            android:progress="100"
+            android:progressBackgroundTint="#375F41"
+            android:progressTint="#3A2DF8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/playerhp1" />
+
+        <ImageView
+            android:id="@+id/p1"
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="135dp"
+            android:layout_marginTop="80dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/arrow_down_float" />
+
+        <ImageView
+            android:id="@+id/p2"
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="60dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/arrow_down_float" />
+
+        <ImageView
+            android:id="@+id/p3"
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="108dp"
+            android:layout_marginTop="120dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/arrow_down_float" />
+
+        <Button
+            android:id="@+id/backbutton"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_margin="0dp"
+            android:text="뒤로가기"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/chat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" />
+
+</LinearLayout>
